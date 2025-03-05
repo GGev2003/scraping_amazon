@@ -1,0 +1,52 @@
+{
+    "first_page_prod": {
+        "product_1": {
+            "name": "Over Ear Bluetooth Headphones Wireless, Dual 50mm & 6 Drivers Hi-Res Sound, 0.38lb Lightweight Foldable Design, 40H Playtime with ANC Mic, Memory Foam Earpads for Commuting Gym Running Travel",
+            "review": "N/A",
+            "price": "68$",
+            "delivery": "Delivery Mon, Mar 17"
+        },
+        "product_2": {
+            "name": "NewFantasia Replacement Audio Cable Compatible with Sennheiser Game ONE, Game Zero, PC373D, PC37X, GSP350, GSP500, GSP600 Gaming Headsets 1.2m/4ft",
+            "review": "30",
+            "price": "10$",
+            "delivery": "Delivery Mon, Mar 17"
+        },
+        "product_3": {
+            "name": "X3 Wireless Gaming Headset for Xbox Series X|S, Xbox One, PS5, PC, Mac, Nintendo Switch, Bluetooth Gaming Headphones with Noise Canceling Microphone, 60H Battery, Low Latency for Gameboy",
+            "review": "1,050",
+            "price": "49$",
+            "delivery": "Delivery Fri, Mar 14"
+        },
+        "product_4": {
+            "name": "HyperX Cloud Mix 2 \u2013 Dual Wireless Over-Ear Headphones with ANC, 2,4GHz dongle, Bluetooth 5.3, PC, PS5, Nintendo Switch, Steam Deck, Mobile, USB-C \u2013 Black",
+            "review": "N/A",
+            "price": "199$",
+            "delivery": "$49.27 delivery"
+        },
+        "product_5": {
+            "name": "PDP Gaming LVL40 Airlite Stereo Headset for Nintendo Switch/Lite/OLED - Wired Power Noise Cancelling Microphone, Lightweight Soft Comfort On Ear Headphones (Mario Neon - Red & Blue)",
+            "review": "29,857",
+            "price": "24$",
+            "delivery": "Delivery Fri, Mar 14"
+        },
+        "product_6": {
+            "name": "Cat Ear Gaming Headphones Wired AUX 3.5mm LED Light, Noise Canceling Game Headphones Stereo Foldable Over-Ear Headsets with Microphone Fit Girls, Kids for PC, PS4, Switch, Xbox, Mobile, Laptop",
+            "review": "1,363",
+            "price": "27$",
+            "delivery": "Delivery Mon, Mar 17"
+        },
+        "product_7": {
+            "name": "OXS Storm G2 Wireless Gaming Headsets, 7.1 Virtual Surround Sound, 3 EQ Modes, 2.4G Low Latency, 50mm Driver, 40H Playtime, RGB Light, Bluetooth 5.3, Compatible with PC, Console, Mobile, White",
+            "review": "79",
+            "price": "79$",
+            "delivery": "Delivery Mon, Mar 17"
+        },
+        "product_8": {
+            "name": "900 Gaming Headset with Microphone for Xbox Series X|S Xbox One PS4 PS5,Wired Over Ear Game Headphones-Portable Foldable-3.5mm Audio Jack",
+            "review": "93",
+            "price": "31$",
+            "delivery": "Delivery Mon, Mar 17"
+        }
+    }
+}
