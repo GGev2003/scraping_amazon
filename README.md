@@ -1,6 +1,6 @@
 🚀 Amazon Product Scraper 🛒
 
-A powerful Python-based web scraper that extracts gaming headset data from Amazon using Selenium and BeautifulSoup (bs4). This script automates pagination, collects product details, and stores them in HTML & JSON for easy analysis.
+A powerful Python-based web scraper with headless mode that extracts product data from Amazon using Selenium and BeautifulSoup (bs4). This script automates pagination, collects product details, and stores them in HTML & JSON for easy analysis.
 
 🔥 Features
 
@@ -37,7 +37,7 @@ Raw HTML (for backup & extended parsing)
 
 🛠️ How It Works
 
-Opens Amazon and searches for "gaming headsets".
+Opens Amazon and searches for "what product we want".
 
 Automatically clicks through pages (1-20) using Selenium.
 
