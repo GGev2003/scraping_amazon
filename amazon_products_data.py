@@ -6,17 +6,31 @@ from bs4 import BeautifulSoup
 import json
 from time import sleep
 
-url = "https://www.amazon.com/s?k=gaming+headsets"
 
-driver = webdriver.Chrome()
-driver.get(url)
+
+gadgets = input("Please write what you want to scrape")
+changed_gadgets = gadgets.replace(" ","+")
+print(changed_gadgets)
+
+url = f"https://www.amazon.com/s?k={changed_gadgets}"
+
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')  
+
+driver = webdriver.Chrome(options=options)
 driver.maximize_window()
+driver.get(url)
+driver.implicitly_wait(10)
 wait = WebDriverWait(driver,10)
 
+
 try:
-    for i in range(1,21):
+    last_number = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "span[class='s-pagination-item s-pagination-disabled']")))
+    count = int(last_number.text) + 1
+    for i in range(1,count):
         pages = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR,".s-list-item-margin-right-adjustment")))
         pages[-1].click()
+        print(f"{i} page done")
         sleep(3)
         page_content = driver.page_source
         sleep(2)
@@ -24,20 +38,19 @@ try:
             with open(f"datas/first_page{i}.html","w",encoding="utf-8") as f:
                 f.write(page_content)
 
-        except Exception as e:
+        except FileNotFoundError as e:
             print(f"file didnt created {e}")
 
         try:
             with open(f"datas/first_page{i}.html","r",encoding="utf-8") as f:
                 html = f.read()
                 
-        except Exception as e:
+        except FileNotFoundError as e:
             print(f"file didnt found {e}")
 
         soup = BeautifulSoup(html,"html.parser")
 
         products = soup.find_all(class_="puis-card-container")
-        print(len(products))
 
         prod_datas = {}
         prod_datas["first_page_prod"]={}
@@ -76,11 +89,12 @@ try:
         try:
             with open(f"datas/infos{i}.json","w",encoding="utf-8") as f:
                 json.dump(prod_datas,f,indent=4)
-        except Exception as e:
+        except FileNotFoundError as e:
             print(f"error occurred while saving the file {e}")
+    
 
 except:
-    print("something went wrong in pages")
+    print("something went wrong in scrping pages")
 finally:
     driver.quit()
 
